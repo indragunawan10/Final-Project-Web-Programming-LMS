@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## How to Run the project
+
+Run composer install to generate depedencies (the vendor folder)
+Create .env file in the root of the project (next to .env.example)
+Copy all the data from .env.example to .env.
+Activate XAMPP & MySQL service.
+Create the DB and configure the .env
+Run php artisan migrate:fresh --seed
+Run php artisan storage:link
+Run the web using php artisan serve and voila it's ready to run!
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
